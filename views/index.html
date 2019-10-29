@@ -1,10 +1,28 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Dot Game</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-  <script src="/index.js"></script>
-</body>
+  <head>
+    <title>Steven's Dot Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <script src="/index.js"></script>
+    <div id="app">
+      <div id="scoring-area">
+        <div>
+          <div id="score">Score</div>
+          <div id="start-pause-button">
+            <button class="button">Start</button>
+          </div>
+        </div>
+        <div id="speed-slider">
+          <div class="slider-wrapper">
+            <input type="range" min="10" max="100" value="10" step="1" />
+          </div>
+        </div>
+      </div>
+      <div id="game-area">
+        <h1>Game</h1>
+      </div>
+    </div>
+  </body>
 </html>

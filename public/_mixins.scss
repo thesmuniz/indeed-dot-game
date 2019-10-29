@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i|Roboto+Slab&display=swap");
+
+// Font Variables
+$roboto-slab: "Roboto Slab", serif;
+$open-sans: "Open Sans", sans-serif;
+
+@mixin heading-font {
+  font-family: "Roboto Slab", serif;
+}
+
+@mixin body-font {
+  font-family: "Open Sans", sans-serif;
+}
