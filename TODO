@@ -1,0 +1,22 @@
+
+Items from Zach at Indeed:
+  ☐ Completeness of the exercise is critical.
+  ☐ The final submitted work should be functional and working correctly.
+  ☐ Bug free (Important)
+  ☐ Level of design polish (Important) - Make it look pleasing both ux and visual.
+  ☐ Code quality (Important) - Focus on scalability, flexibility, and manageability.  Don’t over engineer, but apply good best practices.
+  ☐ Game dynamic (Important) - Approach it from the user’s standpoint.  What makes for a successful and interesting game?
+  ☐ Impress us (Bonus) - Add some of your own flavor to WOW us. 
+
+My Notes:
+  ☐ Ball drop game
+  ☐ Can change, soft focus
+  ☐ Not on creativity 
+  ☐ Big focus on accessibility
+  ☐ Dynamic inject into HTML
+  ☐ Hard on OOP (needs to be in components but can’t import react)
+  ☐ Minor bugs are ok, major bugs not ok
+
+Ideas that I have:
+  ☐ No JavaScript libraries or frameworks allowed. So I will inject from seperate JS files
+  ☐ For styling lets go with Grid/Flexbox 
