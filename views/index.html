@@ -6,10 +6,19 @@
   </head>
   <body>
     <div id="app">
+      <!-- Rounded switch -->
+      <div id="nightMode" class="nightmodeToggle">
+        <label class="switch">
+          <input type="checkbox" />
+          <span class="slider round"></span>
+        </label>
+      </div>
       <div id="scoringArea">
-        <div>
-          <div>Score: <span id="score">0</span></div>
-          <button id="startButton" class="button">Start</button>
+        <div class="score-button">
+          <div><h1 id="score">0</h1></div>
+          <div class="button-container">
+            <button id="startButton" class="button">Start</button>
+          </div>
         </div>
         <div id="speedSlider">
           <div class="slider-wrapper">
@@ -19,8 +28,11 @@
               max="100"
               id="sliderSpeed"
               value="20"
+              class="slider-speed"
             />
-            <div>Speed: <span id="speed">20</span></div>
+            <div>
+              <h3>Speed: <span id="speed">20</span></h3>
+            </div>
           </div>
         </div>
       </div>

@@ -1,3 +1,20 @@
+document.addEventListener("DOMContentLoaded", function() {
+  let nightModeToggle = document.querySelector('input[type="checkbox"]');
+
+  nightModeToggle.addEventListener("change", function() {
+    if (nightModeToggle.checked) {
+      document.getElementById("app").style.backgroundColor = "#000000";
+      document.getElementById("scoringArea").style.backgroundColor =
+        "rgba(0, 0, 0, 0.8)";
+    } else {
+      document.getElementById("app").style.backgroundColor = "#ffffff";
+      document.getElementById("scoringArea").style.boxShadow = "none";
+      document.getElementById("scoringArea").style.backgroundColor =
+        "rgba(250, 250, 250, 0.8)";
+    }
+  });
+});
+
 // Create a object that can be called at game start to create the dots
 class Dot {
   // Dot Constants
@@ -6,14 +23,13 @@ class Dot {
   REFRESH = 10;
 
   constructor() {
-    const currentSpeed = document.getElementById("speed").innerHTML;
     const dotSize = this.randomSize(this.MIN_DOT_WIDTH, this.MAX_DOT_WIDTH);
 
     // This will take the width of the actual window and subtract the max dot width. One issue with this is the responsiveness
     // TODO: See if I can figure out a way to reposition the random dot placement if a user drags the screen size down. Currently window.innerWidth will only get the new size when a dot is added.
     const maxGameArea = window.innerWidth - this.MAX_DOT_WIDTH;
     const valueOfDot = this.calcDotValue(dotSize);
-    const topOfDot = currentSpeed;
+    const topOfDot = 0 - dotSize;
     // Create the Dot element so we can style it
     this.Dot = document.createElement("div");
 
@@ -21,14 +37,20 @@ class Dot {
     this.Dot.style.width = dotSize + "px";
     this.Dot.style.height = dotSize + "px";
     this.Dot.style.top = topOfDot + "px";
-    this.Dot.style.backgroundColor = "red";
     this.Dot.style.borderRadius = "50px";
     this.Dot.style.position = "absolute";
     this.Dot.setAttribute("dot-value", valueOfDot);
     this.Dot.setAttribute("dot-width", dotSize);
     this.Dot.setAttribute("class", "gameDot");
     this.Dot.style.left = this.randomNumber(0, maxGameArea - dotSize) + "px";
+
+    this.Dot.style.backgroundColor = "#" + this.getRandomColor();
   }
+
+  getRandomColor = () => {
+    const colorOptions = ["29c0e6", "eea0b5", "43bc87", "9e86da"];
+    return colorOptions[Math.floor(Math.random() * colorOptions.length)];
+  };
 
   // Calculate the random size of the dot within the given ranges
   randomSize = (max, min) => {

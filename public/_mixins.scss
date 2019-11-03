@@ -1,11 +1,12 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i|Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Bungee|Open+Sans:400,700&display=swap");
 
 // Font Variables
-$roboto-slab: "Roboto Slab", serif;
+$bungee: "Bungee", cursive;
 $open-sans: "Open Sans", sans-serif;
 
 @mixin heading-font {
-  font-family: "Roboto Slab", serif;
+  font-family: "Bungee", cursive;
+  font-weight: 400;
 }
 
 @mixin body-font {
