@@ -20,7 +20,7 @@ h1 {
 
 h3 {
   color: $pink;
-  @include heading-font;
+  @include body-font;
   padding: 0;
   margin: 0;
 }

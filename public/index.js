@@ -4,6 +4,8 @@ document.addEventListener("DOMContentLoaded", function() {
   nightModeToggle.addEventListener("change", function() {
     if (nightModeToggle.checked) {
       document.getElementById("app").style.backgroundColor = "#000000";
+      document.getElementById("scoringArea").style.boxShadow =
+        "0px 6px 21px 5px rgba(0, 0, 0, 0.8)";
       document.getElementById("scoringArea").style.backgroundColor =
         "rgba(0, 0, 0, 0.8)";
     } else {
