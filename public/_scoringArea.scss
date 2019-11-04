@@ -1,11 +1,11 @@
 @import "variables";
 @import "mixins";
 
-#scoringArea {
-  background: $white;
+header {
+  background: rgba(250, 250, 250, 0.8);
   z-index: 999;
   box-shadow: none;
-  color: $white;
+  color: #ffffff;
   padding: 30px;
   width: 100%;
   margin: 0 auto;

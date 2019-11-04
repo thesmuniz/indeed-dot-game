@@ -1,19 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Steven's Dot Game</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
     <div id="app">
-      <!-- Rounded switch -->
       <div id="nightMode" class="nightmodeToggle">
         <label class="switch">
-          <input type="checkbox" />
+          <input type="checkbox" aria-label="night mode toggle" />
           <span class="slider round"></span>
         </label>
       </div>
-      <div id="scoringArea">
+      <header id="scoringArea">
         <div class="score-button">
           <div><h1 id="score">0</h1></div>
           <div class="button-container">
@@ -29,16 +28,17 @@
               id="sliderSpeed"
               value="20"
               class="slider-speed"
+              role="slider"
+              aria-label="currentSpeed"
             />
             <div>
               <h3>Speed: <span id="speed">20</span></h3>
             </div>
           </div>
         </div>
-      </div>
-      <div id="gameArea"></div>
+      </header>
+      <section id="gameArea"></section>
     </div>
-
     <script src="/index.js"></script>
   </body>
 </html>

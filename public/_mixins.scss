@@ -11,3 +11,18 @@ $open-sans: "Open Sans", sans-serif;
 @mixin body-font {
   font-family: "Open Sans", sans-serif;
 }
+
+h1 {
+  color: $pink;
+  @include heading-font;
+  padding: 0;
+  margin: 0;
+  font-size: 60px;
+}
+
+h3 {
+  color: $pink;
+  @include body-font;
+  padding: 0;
+  margin: 0;
+}

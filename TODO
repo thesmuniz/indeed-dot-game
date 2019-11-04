@@ -1,22 +1,22 @@
 
 Items from Zach at Indeed:
-  ☐ Completeness of the exercise is critical.
-  ☐ The final submitted work should be functional and working correctly.
+  ✔ Completeness of the exercise is critical. @done(19-11-03 16:44)
+  ✔ The final submitted work should be functional and working correctly. @done(19-11-04 14:59)
   ☐ Bug free (Important)
-  ☐ Level of design polish (Important) - Make it look pleasing both ux and visual.
-  ☐ Code quality (Important) - Focus on scalability, flexibility, and manageability.  Don’t over engineer, but apply good best practices.
+  ✔ Level of design polish (Important) - Make it look pleasing both ux and visual. @done(19-11-03 16:45)
+  ✔ Code quality (Important) - Focus on scalability, flexibility, and manageability.  Don’t over engineer, but apply good best practices. @done(19-11-03 16:45)
   ☐ Game dynamic (Important) - Approach it from the user’s standpoint.  What makes for a successful and interesting game?
-  ☐ Impress us (Bonus) - Add some of your own flavor to WOW us. 
+  ✔ Impress us (Bonus) - Add some of your own flavor to WOW us. @done(19-11-03 16:46)
 
 My Notes:
-  ☐ Ball drop game
-  ☐ Can change, soft focus
+  ✔ Ball drop game @done(19-11-03 16:46)
+  ✔ Can change, soft focus @done(19-11-03 16:46)
   ☐ Not on creativity 
   ☐ Big focus on accessibility
-  ☐ Dynamic inject into HTML
-  ☐ Hard on OOP (needs to be in components but can’t import react)
+  ✔ Dynamic inject into HTML @done(19-11-03 16:46)
+  ✔ Hard on OOP (needs to be in components but can’t import react) @done(19-11-03 16:46)
   ☐ Minor bugs are ok, major bugs not ok
 
 Ideas that I have:
-  ☐ No JavaScript libraries or frameworks allowed. So I will inject from seperate JS files
-  ☐ For styling lets go with Grid/Flexbox 
+  ✔ No JavaScript libraries or frameworks allowed. So I will inject from seperate JS files @done(19-11-03 16:47)
+  ✔ For styling lets go with Grid/Flexbox @done(19-11-03 16:47)
