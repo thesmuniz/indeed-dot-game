@@ -34,8 +34,8 @@ header {
         text-decoration: none;
         display: inline-block;
         @include body-font;
+        font-size: 50px;
         font-size: 30px;
-        font-weight: 700;
         width: 150px;
         border-radius: 8px;
       }
@@ -64,10 +64,6 @@ header {
         background: $pink;
         border-radius: 50px;
       }
-    }
-
-    h3 {
-      font-size: 35px;
     }
   }
 }
