@@ -1,25 +1,3 @@
-import Dot from "./Dot.js";
-import Speed from "./Speed.js";
-
-document.addEventListener("DOMContentLoaded", function() {
-  let nightModeToggle = document.querySelector('input[type="checkbox"]');
-
-  nightModeToggle.addEventListener("change", function() {
-    if (nightModeToggle.checked) {
-      document.getElementById("app").style.backgroundColor = "#000000";
-      document.getElementById("scoringArea").style.boxShadow =
-        "0px 6px 21px 5px rgba(0, 0, 0, 0.8)";
-      document.getElementById("scoringArea").style.backgroundColor =
-        "rgba(0, 0, 0, 0.8)";
-    } else {
-      document.getElementById("app").style.backgroundColor = "#ffffff";
-      document.getElementById("scoringArea").style.boxShadow = "none";
-      document.getElementById("scoringArea").style.backgroundColor =
-        "rgba(250, 250, 250, 0.8)";
-    }
-  });
-});
-
 class Game {
   state = {
     currentScore: 0,
@@ -130,4 +108,4 @@ class Game {
   };
 }
 
-document.addEventListener("DOMContentLoaded", () => new Game());
+export default Game;
